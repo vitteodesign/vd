@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitalii Udovenko Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="/fonts/TouchSansOne-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/TouchSansOne-Thin.woff2" as="font" type="font/woff2" crossorigin>
+
+
+</head>
+
+<body class="debug1">
+
+  <section class="menu">
+    <section class="menu">
+      <a href="index.html" data-icon="💫" class="menu-item menu-item-vu">
+        <img src="images/svg/vu.svg" alt="">
+      </a>
+      <a href="portfolio.html" data-icon="⭐️" class="menu-item menu-item-po">
+        <img src="images/svg/po.svg" alt="">
+      </a>
+      <a href="information.html" data-icon="☀️" class="menu-item menu-item-in in-active">
+        <img src="images/svg/in.svg" alt="">
+      </a>
+      <a href="contact.html" data-icon="❤️" class="menu-item menu-item-co">
+        <img src="images/svg/co.svg" alt="">
+      </a>
+    </section>
+  </section>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <defs>
+      <filter id="smooth">
+        <feMorphology operator="dilate" radius="0" />
+        <feGaussianBlur stdDeviation="0.3" />
+        <feComponentTransfer>
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComponentTransfer>
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComponentTransfer out="rounded1">
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComposite in2="rounded1" in="SourceGraphic" operator="in" />
+      </filter>
+    </defs>
+  </svg>
+
+
+  <!-- <div class="spacer">&nbsp;</div> -->
+
+  <div class="line-container pb4 pl5 pl2-s mt5">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+   
+ 
+
+  </div>
+
+
+  <section class="pb4 pl5 pl2-s">
+    <img src="images/headers/in-big.svg" alt="Information">
+  </section>
+
+  <section class="phil ph5 ph2-s">
+    <h2>Design Philosophy</h2>
+    <div class="flex flex-wrap">
+
+      <p class="w-50-s pb4 pr4">Vitalii Udovenko, creative professional and multidisciplinary designer who combines knowledge and skills from art, design,
+        technology, psychology, engineering and more. To develop innovative ideas, generating unique concepts for
+        products, services, and digital experiences.
+      </p>
+      <p class="w-50-s pb4 pr4 ">His human-centered and ethically driven philosophy approach emphasizing that there is no
+        un-personal “User” but only the personal “Visitor-Client” which deserves the most exclusive of proposed services
+        and goods. This vision includes metaphorical and sophisticated views representing himself as a “digital
+        welder” who combines brand meta-materials, values and meanings into attractive, functional and more artistic
+        visual forms.</p>
+      <p class="w-50-s pb4 pr4">Building, bridging, synthesising, welding, simply harmonising this core concepts around deep
+        understanding that technology is just a medium of our nature. Removing barriers and proposing a trust first,
+        your wise words can enlighten more than any decorations. This is where each brand values are raises and vibrates
+        from inside out.</p>
+      <p class="w-50-s pb4  "> Think like everything possible to make our life's a bit happier with a touch of sense and joy.
+        We can do everything together. You are the key to inspire. Write me <a class="hover-pink"
+        href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new … ">here</a> if you want to add a vital energy and
+        communicate your brand with unique voice.</p>
+    </div>
+
+  </section>
+
+
+
+  <div class="footer">
+    <div class="vitteo">© 2024 Vitteo.Design. All rights reserved.</div>
+    <div class="multi">Multidisciplinary Designer for your Brand <br class="mobreak"> &#10132; <a
+        href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new … ">Email
+        Me</a>
+    </div>
+
+</div>
+
+
+
+
+    <script>
+      function resizeGridItem(item) {
+        const grid = document.querySelector(".masonry-grid");
+        const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+        const img = item.querySelector('img');
+        const rowSpan = Math.ceil(img.getBoundingClientRect().height / rowHeight);
+        item.style.gridRowEnd = "span " + rowSpan;
+      }
+
+      function resizeAllGridItems() {
+        const allItems = document.getElementsByClassName("masonry-item");
+        for (let x = 0; x < allItems.length; x++) {
+          resizeGridItem(allItems[x]);
+        }
+      }
+
+      window.addEventListener("load", resizeAllGridItems);
+      window.addEventListener("resize", resizeAllGridItems);
+
+      // Reapply layout after all images have loaded
+      // const allImages = document.querySelectorAll('.masonry-item img');
+      // Promise.all(Array.from(allImages).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(resizeAllGridItems);
+    </script>
+
+
+    <script src="fslightbox.js"></script>
+
+
+<!-- 
+    <canvas id="canvas"></canvas>
+    <div class="">
+        <button onclick="setColor('cyan')">Cyan</button>
+        <button onclick="setColor('magenta')">Magenta</button>
+        <button onclick="setColor('yellow')">Yellow</button>
+        <button onclick="setColor('black')">Black</button>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let currentColor = 'cyan';
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth - 20;
+            canvas.height = window.innerHeight - 60;
+        }
+
+        function startDrawing(e) {
+            isDrawing = true;
+            draw(e);
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+            ctx.beginPath();
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            ctx.lineWidth = 1;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = currentColor;
+
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        }
+
+        function setColor(color) {
+            currentColor = color;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        resizeCanvas();
+    </script> -->
+  
+</body>
+
+</html>

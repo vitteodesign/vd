@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalii Udovenko Portfolio</title>
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <script type="text/javascript">
+    $(window).load(function () {
+
+      $(selector).removeClass('hideMe');
+    });
+  </script>
+    <link rel="preload" href="/fonts/TouchSansOne-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/TouchSansOne-Thin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  
+  <body class="debug1">
+    <div class="hideME"></div>
+    <section class="menu" data-pg-collapsed>
+      <section class="menu">
+        <a href="index.html" data-icon="💫" class="menu-item menu-item-vu"> <img src="images/svg/vu.svg" alt=""> </a>
+        <a href="portfolio.html" data-icon="⭐️" class="menu-item menu-item-po"> <img src="images/svg/po.svg" alt=""> </a>
+        <a href="information.html" data-icon="☀️" class="menu-item menu-item-in"> <img src="images/svg/in.svg" alt=""> </a>
+        <a href="contact.html" data-icon="❤️" class="menu-item menu-item-co co-active"> <img src="images/svg/co.svg" alt=""> </a>
+      </section>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+      <defs>
+        <filter id="smooth">
+          <feMorphology operator="dilate" radius="0"/>
+          <feGaussianBlur stdDeviation="0.3"/>
+          <feComponentTransfer>
+            <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+          </feComponentTransfer>
+          <feComponentTransfer>
+            <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+          </feComponentTransfer>
+          <feComponentTransfer out="rounded1">
+            <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+          </feComponentTransfer>
+          <feComposite in2="rounded1" in="SourceGraphic" operator="in"/>
+        </filter>
+      </defs>
+    </svg>
+    <!-- <div class="spacer">&nbsp;</div> -->
+    <div class="circle-container">
+      <div class="circle magenta  ph5 ph2-s"></div>
+      <div class="circle cyan  ph5 ph2-s"></div>
+  </div>
+
+
+    <section class="pb2 pl5 pl2-s">
+      <img src="images/headers/co-big.svg" alt="">
+    </section>
+    <section class="ph5 ph2-s">
+      <h2>Welcome to your brand new everything.<br>
+        Let's create something inspiring.</h2>
+      <p class="">Graphic Design, Product Design, Mobile App Design, Art Direction, Logo, Branding, Custom Fonts,
+        Strategy, Ideation, Prototyping, Storyboards, Fun and Joy. Write me a few lines about your wonderful project, so
+        we can make it live. </p>
+      <div class="flex flex-wrap">
+        <a class="pv5 w-25 no-underline l-cyan" href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new …  " target="_blank">Email </a><br>
+        <a class="pv5 w-25 no-underline l-pink" href="https://dribbble.com/vitteo" target="_blank">Dribbble</a><br>
+        <a class="pv5 w-25 no-underline l-blue" href="https://www.linkedin.com/in/vitaliiudovenko/" target="_blank">LinkedIn</a><br>
+       
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <div class="vitteo">© 2024 Vitteo.Design. All rights reserved.</div>
+    <div class="multi">Multidisciplinary Designer for your Brand <br class="mobreak"> &#10132; <a href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new … ">Email
+        Me</a>
+    </div>
+    </div>
+  </body>
+</html>
