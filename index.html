@@ -1,16 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-     <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <section class="pa4">
-      nav nav mav
-</section>
-    <div class="animation-container">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitalii Udovenko Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link rel="preload" href="/fonts/TouchSansOne-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/TouchSansOne-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  
+
+  <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+
+<body class="debug1">
+
+
+  <!-- <div class="mobile-menu">
+    <section class="menu">
+      <a href="index.html" data-icon="💫" class="menu-item menu-item-vu vu-active">
+        <img src="images/svg/vu.svg" alt="">
+      </a>
+      <a href="portfolio.html" data-icon="⭐️" class="menu-item menu-item-po">
+       <img src="images/svg/po.svg" alt="">
+      </a>
+      <a  href="information.html" data-icon="☀️" class="menu-item menu-item-in">
+        <img src="images/svg/in.svg" alt="">
+      </a>
+      <a  href="contact.html" data-icon="❤️" class="menu-item menu-item-co">
+       <img src="images/svg/co.svg" alt="">
+      </a>
+    </section>
+  </div> -->
+
+
+<section class="menu">
+    <section class="menu">
+      <a href="index.html" data-icon="💫" class="menu-item menu-item-vu vu-active">
+        <img src="images/svg/vu.svg" alt="">
+      </a>
+      <a href="portfolio.html" data-icon="⭐️" class="menu-item menu-item-po">
+       <img src="images/svg/po.svg" alt="">
+      </a>
+      <a  href="information.html" data-icon="☀️" class="menu-item menu-item-in">
+        <img src="images/svg/in.svg" alt="">
+      </a>
+      <a  href="contact.html" data-icon="❤️" class="menu-item menu-item-co">
+       <img src="images/svg/co.svg" alt="">
+      </a>
+    </section>
+  </section>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <defs>
+      <filter id="smooth">
+        <feMorphology operator="dilate" radius="0" />
+        <feGaussianBlur stdDeviation="0.3" />
+        <feComponentTransfer>
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComponentTransfer>
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComponentTransfer out="rounded1">
+          <feFuncA type="table" tableValues="0 0  1 1"></feFuncA>
+        </feComponentTransfer>
+        <feComposite in2="rounded1" in="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="spacer-index">&nbsp;</div>
+
+
+
+  <section class="pb5">
+    <div class="animation-container svg-container">
+      <div class="pv6 ph5">
+        <img class="" src="images/svg/VD-EVERYTHING POSSIBLE.svg" alt="">
+      </div>
+
       <div class="oval"></div>
       <div class="oval"></div>
       <div class="oval"></div>
@@ -18,6 +90,157 @@
       <div class="oval"></div>
       <div class="oval"></div>
       <div class="oval"></div>
-      
     </div>
-  </body>
+  </section>
+
+
+
+  <div class="masonry-grid imageGallery1">
+
+    <!-- <a class="masonry-item" data-fslightbox="gallery" href="images/1080/41.png"> <div><img src="images/1080/41.png" alt="Image 2"></div></a> -->
+    <a class="masonry-item" data-fslightbox="gallery" href="images/everymanifestation2.gif">
+      <div><img src="images/everymanifestation2.gif" alt="Image 2"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/35.png">
+      <div><img src="images/1080/35.png" alt="Image 3"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/8.png">
+      <div><img src="images/1080/8.png" alt="Image 4"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/11.png">
+      <div><img src="images/1080/11.png" alt="Image 1"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/3.png">
+      <div><img src="images/1080/3.png" alt="Image 2"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/4.png">
+      <div><img src="images/1080/4.png" alt="Image 3"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/5.png">
+      <div><img src="images/1080/5.png" alt="Image 4"></div>
+    </a>
+    <a class="masonry-item" data-fslightbox="gallery" href="images/1080/7.png">
+      <div><img src="images/1080/7.png" alt="Image 4"></div>
+    </a>
+
+  </div>
+
+  <section class="pb2 pl5 pl2-s pt7 vd-text">
+    <img src="images/headers/vd-big.svg" alt="">
+  </section>
+
+  <section class="ph5 ph2-s">
+    <h2>Hey there, I'm Vitalii. <br>I'm Graphic and Product Designer based in Kyiv, Ukraine.</h2>
+    <p class="main">
+      I believe when your brand values shine through your visuals, that's when the real magic happens. 
+      My work blends bold, funky lettering, eye-catching color combos, and a dash of warm, friendly vibes. Getting your impactful visual language - building your future. <a
+      href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new … ">Let's create it together.</a>
+    </p>
+
+    <div class="flex flex-wrap">
+      <a class="pv5 w-25-ns w-50 l-cyan" href="portfolio.html">Open Portfolio</a><br>
+      <a class="pv5 w-25-ns w-50  l-cyan" href="portfolio.html">Graphic Design</a><br>
+      <a class="pv5 w-25-ns w-50  l-pink" href="portfolio.html#fonts">Fonts</a><br>
+      <a class="pv5 w-25-ns w-50  l-blue" href="portfolio.html#product">Product Design</a><br>
+    </div>
+
+  </section>
+
+
+  <div class="footer">
+    <div class="vitteo">© 2024 Vitteo.Design. All rights reserved.</div>
+    <div class="multi">Multidisciplinary Designer for your Brand <br class="mobreak"> &#10132; <a
+        href="mailto:vitteodesign@gmail.com?subject=Mail from Vitteo Design&body=Add vital energy to my brand. Create new … ">Email
+        Me</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+    function resizeGridItem(item) {
+      const grid = document.querySelector(".masonry-grid");
+      const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+      const img = item.querySelector('img');
+      const rowSpan = Math.ceil(img.getBoundingClientRect().height / rowHeight);
+      item.style.gridRowEnd = "span " + rowSpan;
+    }
+
+    function resizeAllGridItems() {
+      const allItems = document.getElementsByClassName("masonry-item");
+      for (let x = 0; x < allItems.length; x++) {
+        resizeGridItem(allItems[x]);
+      }
+    }
+
+    window.addEventListener("load", resizeAllGridItems);
+    window.addEventListener("resize", resizeAllGridItems);
+
+    // Reapply layout after all images have loaded
+    // const allImages = document.querySelectorAll('.masonry-item img');
+    // Promise.all(Array.from(allImages).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(resizeAllGridItems);
+  </script>
+
+
+  
+<script src="js/fslightbox.js"></script>
+<style>
+  .fslightbox-container {
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), #000 1810%);
+    touch-action: pinch-zoom;
+    z-index: 1000000000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px); */
+}
+
+
+
+.fslightbox-slide-number-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    font-size: 15px;
+    color: #d7d7d7;
+    z-index: 0;
+    max-width: 55px;
+    text-align: left
+}
+
+
+.fslightbox-toolbar-button {
+    display: none;
+    height: 100%;
+    width: 45px;
+    cursor: pointer
+}
+
+
+.fslightbox-slide-btn {
+    display: none;
+    padding: 9px;
+    font-size: 26px;
+    background: rgba(34, 34, 34, 0.65)
+}
+
+.hideME {
+
+    visibility: hidden;
+}
+</style>
+</body>
+
+</html>
