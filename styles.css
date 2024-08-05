@@ -225,7 +225,7 @@ h2 {
 
 .menu-item {
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.512);
+    background-color: rgba(255, 255, 255, 0.737);
     width: 100%;
 }
 
@@ -646,7 +646,7 @@ a:visited {
 }
 
 .pt6-s {
-    padding-top: 6rem;
+    padding-top: 8rem;
 }
 
 .pb6-s {
@@ -656,10 +656,16 @@ a:visited {
 @media screen and (max-width: 800px) {
     .menu {
         display: grid;
-        padding-left: 2rem;
-        margin-left: -1rem;
-        position: relative;
-        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgba(255, 255, 255, 0.737);
+
+        /* padding-left: 4rem; */
+        /* margin-left: -1rem; */
+        /* position: relative; */
+        position: fixed;
+        left: 2rem;
+
+        /* width: 50vw; */
     }
 
     /* .menu-item-vu {
@@ -686,7 +692,7 @@ a:visited {
     }
 
     .menu-item:nth-child(1) {
-        padding-left: 2rem;
+        padding-left: 32px;
     }
 
     .spacer {
@@ -736,6 +742,7 @@ a:visited {
 
     .pl2-s {
         padding-left: 1.7rem;
+        margin-top: 0px;
     }
 
     .ph2-s {
@@ -787,12 +794,21 @@ a:visited {
         padding: 0;
     }
 
+    .mob5 {
+        margin-top: 8rem;
+    }
+
     .pt6-s {
-        padding-top: 2rem;
+        padding-top: 11rem;
     }
 
     .pb6-s {
         padding-bottom: 5rem;
+    }
+
+    .ph4-s {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -921,22 +937,12 @@ a:visited {
     overflow: hidden;
 }
 
-@media (max-width: 800px) {
-    .container-c {
-        width: calc(100% - 2rem);
-        padding: 0 1rem;
-        left: 0;
-    }
-
-    .w-50-cool {
-        width: 50%;
-    }
-
-    .ph4-s {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+.no-underline {
+    text-decoration: none;
 }
+}
+
+
 
 
 
