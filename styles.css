@@ -227,6 +227,7 @@ h2 {
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.737);
     width: 100%;
+    margin-left: 0rem;
 }
 
 .menu-item:nth-child(1) {
@@ -663,36 +664,20 @@ a:visited {
         /* margin-left: -1rem; */
         /* position: relative; */
         position: fixed;
-        left: 2rem;
+        left: 1rem;
 
         /* width: 50vw; */
     }
 
-    /* .menu-item-vu {
-            order: 0;
-
-        }
-        .menu-item-po {
-            order: 3;
-        }
-        .menu-item-in {
-            order: 2;
-        }
-        .menu-item-co {
-            order: 3;
-        } */
     .menu-item {
         background-color: rgba(255, 255, 255, 0);
         width: inherit;
-        padding-left: 2rem;
-        margin-left: -2rem;
-
-        /* transform: translate(-5%, 0%); */
         top: 0;
+        margin-left: -1rem;
     }
 
     .menu-item:nth-child(1) {
-        padding-left: 32px;
+        padding-left: 1rem;
     }
 
     .spacer {
@@ -809,6 +794,10 @@ a:visited {
     .ph4-s {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .everything {
+        width: 80vw;
     }
 }
 
@@ -941,6 +930,7 @@ a:visited {
     text-decoration: none;
 }
 }
+
 
 
 
