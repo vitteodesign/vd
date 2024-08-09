@@ -933,12 +933,16 @@ a:visited {
 
 ::selection {
   color: #1d1d1d;
-  background-color: #8EFAFC; 
-  }
+  background-color: #8EFAFC;
+}
 
+::-moz-selection {
+  color: #1d1d1d;
+  background-color: #8EFAFC;
+}
 
 a {
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.4rem;
   text-decoration-thickness: 0.1rem;
 }
 
